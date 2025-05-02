@@ -1,0 +1,45 @@
+.vcard-container {
+    height: 100vh;
+    background-color: #0a0a0a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .download-btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .download-btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Optional button style in FollowMe */
+  .vcard-button {
+    margin: 1rem 0;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .vcard-button:hover {
+    background-color: #ddd;
+  }
+  
