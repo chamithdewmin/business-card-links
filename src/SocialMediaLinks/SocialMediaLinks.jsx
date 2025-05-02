@@ -82,13 +82,13 @@ const SocialMediaLinks = () => {
           <img src={tiktokIcon} alt="TikTok" />
         </a>
         <a
-          href="https://wa.me/940767984712?text=Hello%2C%20I'm%20interested%20in%20your%20design%20services"
+          href="https://wa.me/94740429827?text=Hello%2C%20I'm%20interested%20in%20your%20design%20services"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src={whatsappIcon} alt="WhatsApp" />
         </a>
-        <a href="mailto:youremail@example.com">
+        <a href="mailto:logozo.info@gmail.com">
           <img src={emailIcon} alt="Email" />
         </a>
       </div>
