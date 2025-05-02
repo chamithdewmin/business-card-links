@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Helmet>
         <title>LOGOZO</title>
-        <link rel="icon" href="%PUBLIC_URL%/logo.png" />
+        <link rel="icon" href="/icon.png" type="image/png" />
       </Helmet>
 
       <SocialMediaLinks />
