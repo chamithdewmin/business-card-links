@@ -6,7 +6,7 @@ export const downloadVCard = (lang = "en") => {
       lastName: "Samarakoon",
       org: "LOGOZO Graphic Design",
       title: "Creative Designer",
-      phone: "+94767984712",
+      phone: "+94740429827",
       email: "logozo.info@gmail.com",
       website: "https://www.instagram.com/_logozo_/",
     },
