@@ -84,7 +84,8 @@ const SocialMediaLinks = () => {
           <img src={tiktokIcon} alt="TikTok" />
         </a>
         <a
-          href="https://wa.me/94740429827?text=Hello%2C%20I'm%20interested%20in%20your%20design%20services%20at%20LOGOZO"
+          href="https://wa.me/94740429827?text=Hello!%20I'm%20interested%20in%20your%20graphic%20design%20services%20at%20LOGOZO.%20Could%20you%20please%20share%20more%20details%3F
+"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -115,7 +116,8 @@ const SocialMediaLinks = () => {
 
       {/* Bottom Stamp */}
       <div className="bottom-stamp">
-        Made by <a href="https://wa.me/94740429827?text=Hello%2C%20I'm%20interested%20in%20your%20design%20services%20at%20LOGOZO" target="_blank" rel="noopener noreferrer">LOGOZO</a> © {new Date().getFullYear()}
+        Made by <a href="https://wa.me/94740429827?text=Hello!%20I'm%20interested%20in%20your%20graphic%20design%20services%20at%20LOGOZO.%20Could%20you%20please%20share%20more%20details%3F
+" target="_blank" rel="noopener noreferrer">LOGOZO</a> © {new Date().getFullYear()}
       </div>
     </div>
   );
