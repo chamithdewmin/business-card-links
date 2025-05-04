@@ -15,7 +15,7 @@ export const downloadVCard = (lang = "en") => {
       lastName: "සමරකෝන්",
       org: "LOGOZO ග්‍රැෆික් නිර්මාණය",
       title: "නිර්මාණකරු",
-      phone: "+94767984712",
+      phone: "+94740429827",
       email: "logozo.info@gmail.com",
       website: "https://www.instagram.com/_logozo_/",
     },
