@@ -11,7 +11,7 @@ import whatsappIcon from "../assets/images/whatsapp.png";
 import emailIcon from "../assets/images/email.png";
 import starsBg from "../assets/images/bg.png";
 
-import { downloadVCard } from "./VCard"; // Your vCard logic
+import { downloadVCard } from "./VCard";
 
 const translations = {
   en: {
@@ -19,14 +19,16 @@ const translations = {
     servicesTitle: "LOGOZO Graphic Design Services",
     servicesSub: "Affordable • Creative • On-Time Delivery",
     downloadVCard: "📥 Download vCard",
-    about: "We provide affordable and professional graphic design services including logo design, branding, posters, and more.",
+    about:
+      "We provide affordable and professional graphic design services including logo design, branding, posters, and more.",
   },
   si: {
     followMe: "මාව අනුගමනය කරන්න",
     servicesTitle: "LOGOZO ග්‍රැෆික් නිර්මාණ සේවාවන්",
     servicesSub: "අඩු වියදමින් • නිර්මාණශීලීව • වේලාවට ලබාදීම",
     downloadVCard: "📥 වි-කාඩ් බාගන්න",
-    about: "අපි ලබාදෙන්නේ අධික නොවන වියදමින්, වෘත්තීමය ලාංඡන නිර්මාණය, සන්නාමකරණය, පෝස්ටර් සහ තවත් බොහෝ සේවාවන් වේ.",
+    about:
+      "අපි ලබාදෙන්නේ අධික නොවන වියදමින්, වෘත්තීමය ලාංඡන නිර්මාණය, සන්නාමකරණය, පෝස්ටර් සහ තවත් බොහෝ සේවාවන් වේ.",
   },
 };
 
@@ -51,7 +53,7 @@ const SocialMediaLinks = () => {
         minHeight: "100vh",
       }}
     >
-      {/* Language Select */}
+      {/* Language Selector */}
       <div className="lang-select" style={{ marginBottom: "1rem" }}>
         <select onChange={handleLanguageChange} value={lang}>
           <option value="en">English</option>
@@ -64,7 +66,7 @@ const SocialMediaLinks = () => {
         <img src={logo} alt="LOGOZO Logo" className="logo-img" />
       </div>
 
-      {/* Heading */}
+      {/* Title */}
       <h2 className="follow-title">{translations[lang].followMe}</h2>
 
       {/* Social Icons */}
@@ -82,7 +84,7 @@ const SocialMediaLinks = () => {
           <img src={tiktokIcon} alt="TikTok" />
         </a>
         <a
-          href="https://wa.me/94740429827?text=Hello%2C%20I'm%20interested%20in%20your%20design%20services"
+          href="https://wa.me/94740429827?text=Hello%2C%20I'm%20interested%20in%20your%20design%20services%20at%20LOGOZO"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -99,16 +101,21 @@ const SocialMediaLinks = () => {
         <p>{translations[lang].servicesSub}</p>
       </div>
 
-      {/* vCard Download */}
+      {/* vCard Button */}
       <div className="download-vcard" style={{ marginTop: "1rem" }}>
-        <button className="vcard-button" onClick={downloadVCard}>
+        <button className="vcard-button" onClick={() => downloadVCard(lang)}>
           {translations[lang].downloadVCard}
         </button>
       </div>
 
-      {/* About Section (Text-based) */}
+      {/* About */}
       <div className="about-text" style={{ marginTop: "2rem", maxWidth: "600px", marginInline: "auto" }}>
         <p>{translations[lang].about}</p>
+      </div>
+
+      {/* Bottom Stamp */}
+      <div className="bottom-stamp">
+        Made by <a href="https://wa.me/94740429827?text=Hello%2C%20I'm%20interested%20in%20your%20design%20services%20at%20LOGOZO" target="_blank" rel="noopener noreferrer">LOGOZO</a> © {new Date().getFullYear()}
       </div>
     </div>
   );
